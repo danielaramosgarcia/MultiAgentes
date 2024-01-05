@@ -84,7 +84,7 @@ while not done:
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     Axis()
-    gluSphere(sphere, 5.0, 32, 16)
+    gluSphere(sphere, 4.0, 32, 16)
 
     pygame.display.flip()
     pygame.time.wait(100)
