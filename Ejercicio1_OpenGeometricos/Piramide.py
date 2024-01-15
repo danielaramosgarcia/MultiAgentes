@@ -19,9 +19,9 @@ class Piramide:
     def render(self):
         #se hace una copia por si volvemos a dibujar otra piramide despues
         pointsR = self.points.copy()
-        self.op3D.mult_Points(pointsR)
+#        self.op3D.mult_Points(pointsR)
         #se establece el color
-        glColor3f(1.0,1.0,1.0)
+        glColor3f(1.0,0.0,0.0)
         #se dibuja la base
         glBegin(GL_QUADS)
         glVertex3f(pointsR[0][0],pointsR[0][1],pointsR[0][2])

@@ -80,7 +80,6 @@ def Init():
     glClearColor(0,0,0,0)
     glEnable(GL_DEPTH_TEST)
 
-    sphere = gluNewQuadric()
 
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE)
 
@@ -92,9 +91,11 @@ while not done:
             done = True
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-
+    
     Axis()
-
+    piramide = Piramide(OpMat)
+    
+    piramide.render()
     pygame.display.flip()
     pygame.time.wait(100)
 

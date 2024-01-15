@@ -46,5 +46,5 @@ class OpMat:
         pointsR = (self.A @ points.T).T
         for i in range(0, pointsR.shape[1] + 1):
             for j in range (0,4):
-                points[i][j] = pointsR[i][j]
+                points[i][j] = pointsR[i]
         
